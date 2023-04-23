@@ -19,7 +19,7 @@ Employees have basic information recorded, and their roles can be either a docto
 Departments have codes and names recorded, and follow a daily schedule with three shifts.
 The system is designed to keep track of various aspects of hospital management, including patient information, appointments, treatments, prescriptions, medications, medical records, procedures, and employee information.
 
-![ER Diagram](https://github.com/anidh1/Hospital_Database_Management_System/blob/main/SQL%20Diagram.png)
+![DB Schema](https://github.com/anidh1/Hospital_Database_Management_System/blob/main/SQL%20Diagram.png)
 
 
 How to Use the Hospital Database Management System
@@ -33,6 +33,7 @@ Test Queries on the Hospital Database Management System :
 
 Query 1: Retrieve Patient Information and Associated Medical Records
 This query retrieves patient information along with their medical records. It involves joining the "Patient" table with the "Medical_Record" table on the common attribute "Patient_ID". The SELECT statement specifies the attributes to be retrieved, which include Patient_ID, Name, Date of Birth, Medical_Record_ID, Date, and Condition. The FROM clause specifies the tables to be queried, and the JOIN clause specifies the relationship between the two tables using the "Patient_ID" attribute. The query is sorted by Patient_ID in ascending order using the ORDER BY clause.
+
 
 Query 2: Retrieve Doctor Information and Number of Prescriptions
 This query retrieves doctor information along with the count of prescriptions assigned by each doctor. It involves joining the "Doctor" table with the "Prescription" table on the common attribute "Doctor_ID". The SELECT statement specifies the attributes to be retrieved, which include Doctor_ID, Name, Specialty, and the count of prescriptions assigned by each doctor using the COUNT() function. The FROM clause specifies the tables to be queried, and the JOIN clause specifies the relationship between the two tables using the "Doctor_ID" attribute. The query is grouped by Doctor_ID, Name, and Specialty using the GROUP BY clause, and sorted by Doctor_ID in ascending order using the ORDER BY clause.
