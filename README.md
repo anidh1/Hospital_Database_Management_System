@@ -30,7 +30,7 @@ It is important to ensure that the system is properly connected to the hospital'
 
 ![DB Schema](https://github.com/anidh1/Hospital_Database_Management_System/blob/main/SQL%20Diagram.png)
 
-# Test Queries on the Hospital Database Management System : 
+## Test Queries on the Hospital Database Management System : 
 
 #vQuery 1: Retrieve Patient Information and Associated Medical Records
 This query retrieves patient information along with their medical records. It involves joining the "Patient" table with the "Medical_Record" table on the common attribute "Patient_ID". The SELECT statement specifies the attributes to be retrieved, which include Patient_ID, Name, Date of Birth, Medical_Record_ID, Date, and Condition. The FROM clause specifies the tables to be queried, and the JOIN clause specifies the relationship between the two tables using the "Patient_ID" attribute. The query is sorted by Patient_ID in ascending order using the ORDER BY clause.
